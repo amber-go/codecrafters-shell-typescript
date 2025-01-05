@@ -6,6 +6,7 @@ const rl = createInterface({
 });
 
 // Uncomment this block to pass the first stage
-rl.question('$ ', (answer) => {
+rl.question('$ ', (answer: string) => {
+  console.log(answer);
   rl.close();
 });
