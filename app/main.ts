@@ -7,7 +7,7 @@ const rl = createInterface({
 
 function runCommand() {
   rl.question('$ ', (answer: string) => {
-    console.log(`${answer}: command not found\n`);
+    rl.write(`${answer}: command not found\n`);
     runCommand();
   });
 }
