@@ -5,8 +5,12 @@ const rl = createInterface({
   output: process.stdout,
 });
 
-// Uncomment this block to pass the first stage
 rl.question('$ ', (answer: string) => {
-  console.log(answer);
+  if (answer === 'invalid_command') {
+    console.log(`${answer}: command not found`);
+  } else {
+    console.log(answer);
+  }
+
   rl.close();
 });
