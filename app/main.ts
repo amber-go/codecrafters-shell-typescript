@@ -14,7 +14,7 @@ function getCommandType(command: string) {
     case 'type':
       return 'type is a shell builtin';
     default:
-      return `${command}: command not found`;
+      return `${command}: not found`;
   }
 }
 
